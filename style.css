@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(189, 69, 69);
+    color:white;
+    
+
+}
+
+main{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+ul,li {
+    margin: 20px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    position: relative;
+    display: flex;
+    background-color: bisque;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+
+.ball {
+    width: 75px;
+    height: 75px;
+}
+
+
+.menu2:hover{
+    color: hsl(356, 80%, 48%);
+}
+
+
+.rech{margin-top: 30px;
+    margin-bottom: 30px;
+}
+#searchContainer {
+    text-align: center;
+    margin-top: 50px; 
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+label {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.boutonRecherche {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+.rech2{
+    margin-bottom: 50px;
+    
+    
+}
+
+.alea{
+    padding: 17px 60px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    
+    position: absolute;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    
+}
+
+.alea:hover{
+    letter-spacing: 3px;
+ background-color: hsl(356, 80%, 48%);
+ color: hsl(0, 0%, 100%);
+ box-shadow: hsl(356, 72%, 57%);
+}
+
+.rech3{
+    margin-top: 40px;
+    
+}
+#redirectButton {
+    padding: 17px 47px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    
+    position: absolute;
+    left: 50%;
+    top: 39%;
+    
+    transform: translate(-50%, -50%);
+}
+
+#redirectButton:hover {
+    letter-spacing: 3px;
+    background-color: hsl(356, 80%, 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(356, 72%, 57%);
+}
+
+#redirectButton2 {
+    padding: 17px 80px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    
+    position: absolute;
+    left: 50%;
+    top: 49%;
+    
+    transform: translate(-50%, -50%);
+}
+#redirectButton2:hover {
+    letter-spacing: 3px;
+    background-color: hsl(356, 80%, 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(356, 72%, 57%);
+}
+.boutongo{
+    border-radius: 5px;
+}
+.boutongo:hover{
+    background-color: hsl(356, 80%, 48%);
+    color: hsl(0, 0%, 100%);
+}
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.5s;
+}
+ 
+#scrollBtn img {
+    width: 75px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 1s ease-in-out; 
+}
+ 
+#scrollBtn:hover {
+    transform: rotate(-360deg);
+}
+ 
+#scrollBtn.clicked img {
+    transform: scale(4);
+    transition: transform 1s;
+}
+
+#scrollBtn.clicked {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
