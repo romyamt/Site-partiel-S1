@@ -1,0 +1,133 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+    z-index: 10; /* Assurez-vous que le header est au-dessus de l'image de fond */
+    position: relative;
+}
+
+/* bouton */
+
+button {
+    
+    color: #ff9234;
+    border: 0;
+    padding: .5em 1em;
+    font-size: 1.5em;
+    border-radius: 1em;
+    outline: 0;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+/* Menu */
+nav {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: none;
+  }
+  
+  ul {
+    list-style: none; padding: 0; z-index: 2;
+  }
+  
+  ul li {
+    text-align: center;
+    animation: .3s print;
+  }
+  
+  li a {
+    text-decoration: none; font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold; font-family: arial;
+    color: white;
+  }
+  
+  ul li a:hover { color: #ff9234; }
+  
+  .open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .backdrop {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, .9);
+    cursor: pointer;
+    z-index: 1;
+    animation: fade .1s;
+  }
+  
+  @keyframes print {
+    from {
+      margin-top: -50px; opacity: 0;
+    }
+    to {
+      margin-top: 0; opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  #menuIcon {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 2em; 
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menuIcon > div {
+    width: 2em; 
+    height: 0.25em; 
+    background: #ff9234;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+    
+}
+
+.cross div:first-child {
+    transform: rotate(45deg); /* La première barre se transforme en première partie de la croix */
+}
+
+.cross div:nth-child(2) {
+    opacity: 0; /* La deuxième barre disparaît */
+    transform: translateX(20px); /* S'assure que la barre est hors de la vue */
+}
+
+
+.cross div:last-child {
+    transform: rotate(-45deg); /* La troisième barre se transforme en deuxième partie de la croix */
+}
+
+/* Fond header */
+
+.background{
+    background-image: url('background1.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    }
+
+.bouton1{
+    background-color: #ff9234;
+    color: white;
+}

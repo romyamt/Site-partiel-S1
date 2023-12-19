@@ -1,0 +1,26 @@
+/* Customise la barre de défilement entière */
+::-webkit-scrollbar {
+    width: 12px; /* Largeur de la barre de défilement */
+}
+
+/* Customise le fond de la barre de défilement (la piste) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Couleur de fond */
+}
+
+/* Customise le bouton de défilement (le pouce) */
+::-webkit-scrollbar-thumb {
+    background: #ff9234; /* Couleur orange */
+    border-radius: 6px; /* Rend les angles arrondis */
+    border: 3px solid #f1f1f1; /* Ajoute une bordure de couleur de fond similaire à la piste */
+}
+
+/* Ajoute un effet au survol */
+::-webkit-scrollbar-thumb:hover {
+    background: #e67e22; /* Une nuance plus foncée d'orange au survol */
+}
+/* Customise la barre de défilement pour Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ff9234 #f1f1f1;
+}

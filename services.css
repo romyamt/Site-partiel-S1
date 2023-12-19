@@ -1,0 +1,270 @@
+/* Body */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    
+}
+body, html {
+    width: 100%; /* Assure que le corps et le html prennent toute la largeur */
+    max-width: 100%; /* Empêche le corps de dépasser la largeur de la fenêtre */
+    overflow-x: hidden; /* Cache tout débordement horizontal */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 100; /* Assure que le header est au-dessus des autres éléments */
+    position: relative; /* Nécessaire pour que z-index fonctionne */
+}
+
+/* bouton */
+
+button {
+    
+    color: #ff9234;
+    border: 0;
+    padding: .5em 1em;
+    font-size: 1.5em;
+    border-radius: 1em;
+    outline: 0;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+/* Menu */
+nav {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: none;
+  }
+  
+  ul {
+    list-style: none; padding: 0; z-index: 2;
+  }
+  
+  ul li {
+    text-align: center;
+    animation: .3s print;
+  }
+  
+  li a {
+    text-decoration: none; font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold; font-family: arial;
+    color: white;
+  }
+  
+  ul li a:hover { color: #ff9234; }
+  
+  .open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .backdrop {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, .9);
+    cursor: pointer;
+    z-index: 1;
+    animation: fade .1s;
+  }
+  
+  @keyframes print {
+    from {
+      margin-top: -50px; opacity: 0;
+    }
+    to {
+      margin-top: 0; opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  #menuIcon {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 2em; 
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menuIcon > div {
+    width: 2em; 
+    height: 0.25em; 
+    background: #ff9234;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+    
+}
+
+.cross div:first-child {
+    transform: rotate(45deg); /* La première barre se transforme en première partie de la croix */
+}
+
+.cross div:nth-child(2) {
+    opacity: 0; /* La deuxième barre disparaît */
+    transform: translateX(20px); /* S'assure que la barre est hors de la vue */
+}
+
+
+.cross div:last-child {
+    transform: rotate(-45deg); /* La troisième barre se transforme en deuxième partie de la croix */
+}
+
+/* Fond header */
+
+.background{
+    background-image: url('background1.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    }
+
+.bouton1{
+    background-color: #ff9234;
+    color: white;
+}
+
+
+
+
+
+
+
+/*Image background*/
+.background_img { 
+	width:1512px;
+	height:830px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(background1.jpeg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+/*filtre blanc*/ 
+.background_filtre { 
+	background-color:rgba(255, 255, 255, 0.800000011920929);
+	width:1512px;
+	height:830px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+/*Centrage texte*/
+.section_centre { 
+	width:921px;
+	height:263px;
+	position:absolute;
+	left:296px;
+	top:284px;
+}
+/*Centrage bouton*/
+.section_centre_bouton{ 
+	width:215px;
+	height:58px;
+	position:absolute;
+	left:353px;
+	top:205px;
+}
+/*Style bouton*/
+.section_centre_bouton2 { 
+	background-image:linear-gradient(0deg, rgba(252.00000017881393, 163.00000548362732, 76.0000030696392, 1) 0%,rgba(220.60986936092377, 117.77418628334999, 17.249508798122406, 1) 100%) ;
+	width:215px;
+	height:58px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:50px;
+	border-top-right-radius:50px;
+	border-bottom-left-radius:50px;
+	border-bottom-right-radius:50px;
+}
+/*style bouton2*/
+.section_centre_bouton3{ 
+	color:rgba(255, 255, 255, 1);
+	width:160px;
+	height:19px;
+	position:absolute;
+	left:27px;
+	top:19px;
+
+	text-align:center;
+	font-size:16px;
+	letter-spacing:0;
+}
+
+
+/*Centrage texte*/
+.section_centre_texte { 
+	color:rgba(0, 0, 0, 1);
+	width:250px;
+	height:24px;
+	position:absolute;
+	left:335px;
+	top:0px;
+
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
+/*Mise en page de la section*/
+.section_centre_texte2 { 
+	color:rgba(0, 0, 0, 1);
+	width:921px;
+	height:132px;
+	position:absolute;
+	left:0px;
+	top:33px;
+
+	text-align:center;
+	font-size:36px;
+	letter-spacing:0;
+}
+
+/*section orange*/
+.section_orange { 
+	background-color:rgba(250.00000029802322, 159.0000057220459, 71.00000336766243, 1);
+	width:1512px;
+	height:177px;
+	position:absolute;
+	left:0px;
+	top:830px;
+}
+
+/*texte section orange*/
+.section_orange_texte { 
+	color:rgba(255, 255, 255, 1);
+	width:1280px;
+	height:127px;
+	position:absolute;
+	left:116px;
+	top:855px;
+
+	text-align:center;
+	font-size:25px;
+	letter-spacing:0;
+}
