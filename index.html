@@ -19,57 +19,22 @@
     <nav>
         <ul class="menu">
             <li><a class="menu2" href="index.html">Accueil</a></li>
-            <li><a class="menu2" href="listetype.html">Liste des Pokémons par type</a></li>
-            <li><a class="menu2" href="listegeneration.html">Liste des Pokémons par générations</a></li>
+            <li><a class="menu2" href="listegeneration.html">Services</a></li>
+            <li><a class="menu2" href="listegeneration.html">Nos réalisations</a></li>
+            <li><a class="menu2" href="listetype.html">Qui sommes nous</a></li>
+            <li><button>Contact</button></li>
+            
         </ul>
     </nav>
 </header>
 
 <body>
     <main>
-            <section id="result">
-            <section class="rech">
-                <div id="recherche">
-                    <input type="text" id="searchInput" placeholder="Entrez votre texte">
 
-                    <label>
-                        <input type="radio" name="searchType" value="name"> Nom
-                    </label>
-
-                    <label>
-                        <input type="radio" name="searchType" value="type"> Type
-                    </label>
-
-                    <label>
-                        <input type="radio" name="searchType" value="generation"> Génération
-                    </label>
-
-                    <button class="boutongo" onclick="performSearch()">GO</button>
-                </div>
-            </section>
-        </section>
     
-    <section>
-        <button class="alea" onclick="refreshPage()">Pokemon aléatoire</button>
-        <button  id="redirectButton" onclick="redirectToAnotherPage()">Liste des générations</button>
-        <button id="redirectButton2" onclick="redirectToAnotherPage2()">Liste des types</button>
-    </section>
 
-
-    <section class="rech3">
-        <section id="detail" style="display:none;">
-
-        </section>
-        <section id="list">
-            <ul id="listPost">
-
-            </ul>
-        </section>
-    </section>
         
-    <button onclick="startScrollAnimation()" id="scrollBtn">
-        <img src="pokeball.png">
-    </button>
+
     </main>
 
     <script src="main.js"></script>
