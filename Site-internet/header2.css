@@ -1,0 +1,211 @@
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+ position: fixed; /*Pour que le menu soit toujours visible et bouge avec le scroll*/
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    /* Ajoutez un fond si nécessaire */
+  }
+  #menuIcon {
+  
+    margin-right: 5%; /* Marge de 2% du bord droit */
+  
+    /* Autres styles du bouton */
+  }
+  /* bouton */
+  
+  .logo{
+    margin-top: 30%;
+    margin-left: 20%;
+    height: 4em;
+  }
+  
+  
+  
+  
+  
+  button {
+      
+      color: #ff9234;
+      border: 0;
+      padding: .5em 1em;
+      font-size: 1.5em;
+      border-radius: 1em;
+      outline: 0;
+      cursor: pointer;
+      transition: all .1s;
+  }
+  
+  /* Menu */
+  nav {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      display: none;
+      z-index: 1000;
+    }
+    
+    ul {
+      list-style: none; padding: 0; z-index: 2;
+    }
+  
+  
+    ul li {
+      text-align: center;
+      animation: .3s print;
+      margin: 0 0 8% 0; 
+      
+    }
+    
+    li a {
+      text-decoration: none; font-size: 3em;
+      text-transform: uppercase;
+      font-weight:300;
+      color: white;
+      
+    }
+    
+    ul li a:hover { color: #ff9234; }
+    
+    .open {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    /*Fond noir quand le menu est activé*/
+    .backdrop {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, .9);
+      cursor: pointer;
+      z-index: 1;
+      animation: fade .1s;
+    }
+    
+    /* animation arrivé du texte du menu*/
+    @keyframes print {
+      from {
+        margin-top: -50px; opacity: 0;
+      }
+      to {
+        margin-top: 0; opacity: 1;
+      }
+    }
+    
+    @keyframes fade {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  
+    #menuIcon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 1.5em; /* Réduisez la hauteur si nécessaire */
+      width: 1.5em; /* Ajoutez une largeur pour contrôler la taille du menu */
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      box-sizing: border-box;
+      
+  }
+  
+  #menuIcon > div {
+      width: 1.3em; /* Réduisez la largeur des barres */
+      height: 0.2em; /* Réduisez la hauteur des barres */
+      background: #ff9234; /* Couleur initiale */
+      border-radius: 10px;
+      transition: all 0.3s linear;
+      position: relative;
+      transform-origin: 1px;
+      z-index: 1100;
+  }
+  
+  
+
+  .cross div {
+    background: #ff9234; /* Couleur blanche pour la croix */
+}
+
+.cross div:first-child {
+    transform: translateY(0.1em) rotate(45deg);
+}
+  
+.cross div:nth-child(2) {
+    opacity: 0;
+}
+  
+.cross div:last-child {
+    transform: translateY(-0.1em) rotate(-45deg);
+}
+  
+  .contact-button {
+    position: fixed; /* Fixe le bouton par rapport à la fenêtre du navigateur */
+    bottom: 20px; /* 20px du bas de la fenêtre */
+    right: 20px; /* 20px du côté droit de la fenêtre */
+    padding: 10px 20px; /* Espacement interne pour le texte */
+    
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    border-radius: 5px; /* Arrondit les coins */
+    font-size: 1em; /* Taille du texte */
+    z-index: 1000; /* S'assure que le bouton est au-dessus des autres éléments */
+    transition: background-color 0.3s; /* Animation de fond au survol */
+  }
+  
+  
+  
+  
+  /* Bouton de contact fixe */
+  .contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .contact-text {
+    font-size: 1.2em;
+    color: #ff9234;
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    display: flex; /* Aligner les liens sociaux en ligne */
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px; /* Ajoute un espace horizontal entre les icônes */
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ffffff; /* Couleur de fond par défaut pour les icônes */
+  }
+  
+  .social-link img {
+    width: 100%; /* Assure que l'image remplit le conteneur */
+    height: auto;
+  }
+  
+  /* Couleurs spécifiques à chaque réseau social */
+  .social-link.linkedin { background-color: #0077b5; }
+  .social-link.facebook { background-color: #4267B2; }
+  .social-link.instagram { background-color: #E1306C; }
+  

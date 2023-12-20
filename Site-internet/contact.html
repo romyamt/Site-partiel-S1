@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Communication</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='contact.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='header2.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='scrollbar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='footer.css'>
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+</head>
+<body>
+        <header>
+            <a href="index.html">
+                <img class="logo" src="images/logo.png">
+            </a>
+            <button id="menuIcon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </header>
+    <nav>
+        <div class="backdrop"></div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#">Réalisations</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Qui sommes-nous</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <div class="texteContact">On se rencontre pour discuter de vos enjeux autour d’un bon café ?<br>
+
+            Vous pouvez prendre rendez-vous en ligne, en remplissant le formulaire ou par mail contact@hermine.fr<br>
+            1 rue marie curie 56890 Plescop</div>
+
+        <form action="https://formspree.io/f/xyyrgjkg" method="POST" enctype="multipart/form-data">
+            <!-- Champ pour l'email -->
+            <label>
+              Votre email :
+              <input type="email" name="email" required>
+            </label>
+          
+            <!-- Champ pour le nom ou l'entreprise -->
+            <label>
+              Nom ou entreprise :
+              <input type="text" name="name" required>
+            </label>
+          
+            <!-- Champ pour le sujet -->
+            <label>
+              Sujet de la demande :
+              <input type="text" name="subject" required>
+            </label>
+          
+            <!-- Espace pour entrer du texte -->
+            <label>
+              Votre message :
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+          
+            <!-- Champ pour ajouter un fichier -->
+            <label>
+              Votre fichier :
+              <input type="file" name="upload">
+            </label>
+          
+            <!-- Bouton de soumission -->
+            <button type="submit">Envoyer</button>
+          </form>
+          
+    </main>
+
+    <footer>
+        <!-- Sections supérieures -->
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/logo3.png" alt="Logo">
+            </div>
+            <div class="footer-links">
+                <div class="footer-section footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="realisations.html">Réalisations</a>
+                    <a href="services.html">Services</a>
+                    <a href="quisommesnous.html">Qui sommes-nous</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="footer-section footer-social">
+                    <a href="facebook.com/hermine" target="_blank">
+                        <img src="images/facebook_logo.png" alt="Facebook">
+                    </a>
+                    <a href="instagram.com/hermine" target="_blank">
+                        <img src="images/instagram_logo.png" alt="Instagram">
+                    </a>
+                    <a href="linkedin.com/hermine" target="_blank">
+                        <img src="images/linkedin_logo.png" alt="Linkedin">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sections inférieures -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p>L'Hermine © 2023</p>
+            </div>
+            <div class="footer-bottom-right">
+                <a class="un" href="mentions-legales.html">Mentions légales</a> |
+                <a class="un" href="politique-de-confidentialite.html">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+    
+
+<script src="scriptContact.js"></script>
+</body>
+</html>
