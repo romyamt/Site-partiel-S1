@@ -3,6 +3,10 @@ const nav = document.querySelector('nav');
 const backdrop = document.querySelector('.backdrop');
 const body = document.body; // Récupère l'élément body
 
+
+
+
+
 button.addEventListener('click', () => {
   button.classList.toggle('cross'); // Bascule la classe pour la transformation
 
@@ -38,3 +42,36 @@ window.addEventListener("scroll", function() {
     header.classList.remove("header-scrolled");
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const contactButton = document.querySelector('.contact-button');
+  const socialLinks = document.querySelector('.social-links');
+  const contactHideSection = document.querySelector('#contact-hide-section');
+
+  const observerOptions = {
+    root: null, // par défaut le viewport
+    rootMargin: '0px',
+    threshold: 0, // Se déclenche dès que l'élément entre dans le viewport
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        contactButton.style.display = 'none';
+        socialLinks.style.display = 'none';
+      } else {
+        contactButton.style.display = 'flex';
+        socialLinks.style.display = 'flex';
+      }
+    });
+  }, observerOptions);
+
+  observer.observe(contactHideSection);
+});
+
+
+
+
+
+

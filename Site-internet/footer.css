@@ -4,6 +4,13 @@ footer {
     padding: 50px 5%; /* Ajoute un padding horizontal de 2% pour correspondre au header */
     box-sizing: border-box; /* S'assure que le padding est inclus dans la largeur du footer */
 }
+footer {
+    position: relative; /* Ou un autre positionnement selon votre mise en page */
+}
+
+.texteContact {
+    transition: display 0.3s ease-in-out; /* Transition pour l'action de cacher/montrer */
+}
 
 
 

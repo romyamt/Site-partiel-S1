@@ -133,7 +133,7 @@ nav {
 
 /* Styles lorsque le header a un fond différent */
 .header-scrolled #menuIcon > div {
-  background: white; /* Couleur blanche pour le menu burger */
+  background: black; /* Couleur blanche pour le menu burger */
 }
 
 .cross div:first-child {
@@ -178,9 +178,11 @@ nav {
 }
 
 .contact-text {
+  font-weight: bold;
   font-size: 1.2em;
-  color: #ff9234;
+  color: black;
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .social-links {

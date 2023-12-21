@@ -7,7 +7,12 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='effetServices.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='scrollbar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='footer.css'>
+    <link rel="stylesheet" href="https://use.typekit.net/qvu4gvs.css">
+    <script src="https://tyradex.vercel.app"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
     <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
 </head>
 <body>
@@ -26,9 +31,9 @@
         <div class="backdrop"></div>
         <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="#">Réalisations</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Qui sommes-nous</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#quisommesnous">Qui sommes-nous</a></li>
             <li><a href="contact.html">contact</a></li>
         </ul>
     </nav>
@@ -36,16 +41,13 @@
         <section class="background">
             
             <div class="background_filtre "></div>
-            <div class="section_centre" >
-                <div class="centered-text">Bienvenue chez l'Hermine</div>
-
-        </div>
+            
     </div>
     </section>
         </main>
         <div class="section_orange">
             <span class="section_orange_texte">
-                Nous vous accompagnons à créer une réelle identité de votre entreprise sur le web et à élaborer une stratégie média pour des résultats à moyen et long terme.
+                Nous vous accompagnons pour créer une réelle identité de votre entreprise sur le web et à élaborer une stratégie média pour des résultats à moyen et long terme.
             </span>
         </div>
 
@@ -56,23 +58,125 @@
                     allowfullscreen></iframe>
         </div>
 
-        <p>test</p>
+        
+        <div class="conteneur-titre">
+            <h1 id="services" class="titreServices">Nos services</h1>
+          </div>
+
+        <div class="cards-container">
+            <!-- Repeat this block for each card -->
+            <div class="card">
+              <svg viewBox="0 0 24 24" xmlns="images/creaSiteWeb.png">
+                <path><img src="images/creaSiteWeb.png"></img></path>
+              </svg>
+              <div class="card__content">
+                <p class="card__title">Création site web</p>
+                <p class="card__description">Lorem ipsum dolor sit amet...</p>
+              </div>
+            </div>
+            <!-- Repeat for card 2, 3 and 4 with respective content -->
+            <div class="card">
+                <svg viewBox="0 0 24 24" xmlns="images/comManagement.png">
+                  <path><img src="images/comManagement.png"></img></path>
+                </svg>
+                <div class="card__content">
+                  <p class="card__title">Community Management</p>
+                  <p class="card__description">Lorem ipsum dolor sit amet...</p>
+                </div>
+              </div>
+              <div class="card">
+                <svg viewBox="0 0 24 24" xmlns="images/creaGraphique.png">
+                  <path><img src="images/creaGraphique.png"></img></path>
+                </svg>
+                <div class="card__content">
+                  <p class="card__title">Création graphique</p>
+                  <p class="card__description">L'agence l'hermine vous propose de créer ou mettre à jours vôtre identité graphique.</p>
+                </div>
+              </div>
+              <div class="card">
+                <svg viewBox="0 0 24 24" xmlns="images/motionDesign.png">
+                  <path><img src="images/motionDesign.png"></img></path>
+                </svg>
+                <div class="card__content">
+                  <p class="card__title">Motion Design</p>
+                  <p class="card__description">Lorem ipsum dolor sit amet...</p>
+                </div>
+              </div>
+          </div>
+          
+          
+         
+          <div class="conteneur-titre">
+            <h1 class="titreServices">Portfolio</h1>
+          </div>
+
+
+
+
+
 
 <!-- Bouton de contact fixe -->
 <div class="contact-button">
-    <p class="contact-text">Contact</p>
+    <a href="contact.html" class="contact-text">Contact</a>
     <div class="social-links">
         <a href="https://www.linkedin.com" target="_blank" class="social-link linkedin">
-            <img src="linkedin_logo.png" alt="LinkedIn">
+            <img src="images/linkedin_logo2.png" alt="LinkedIn">
         </a>
         <a href="https://www.facebook.com" target="_blank" class="social-link facebook">
-            <img src="images/facebook_logo.png" alt="Facebook">
+            <img src="images/facebook_logo2.png" alt="Facebook">
         </a>
         <a href="https://www.instagram.com" target="_blank" class="social-link instagram">
-            <img src="instagram_logo.png" alt="Instagram">
+            <img src="images/instagram_logo2.png" alt="Instagram">
         </a>
     </div>
 </div>
+
+
+
+
+
+<div id="contact-hide-section" style="height: 1px; margin-top: -1px;"></div>
+<footer>
+    <!-- Sections supérieures -->
+    <div class="footer-top">
+        <div class="footer-logo">
+            <img src="images/logo3.png" alt="Logo">
+        </div>
+        <div class="footer-links">
+            <div class="footer-section footer-links">
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="realisations.html">Réalisations</a>
+                <a href="quisommesnous.html">Qui sommes-nous</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-social">
+            <div class="footer-section footer-social">
+                <a href="facebook.com/hermine" target="_blank">
+                    <img src="images/facebook_logo.png" alt="Facebook">
+                </a>
+                <a href="instagram.com/hermine" target="_blank">
+                    <img src="images/instagram_logo.png" alt="Instagram">
+                </a>
+                <a href="linkedin.com/hermine" target="_blank">
+                    <img src="images/linkedin_logo.png" alt="Linkedin">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sections inférieures -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-left">
+            <p>L'Hermine © 2023</p>
+        </div>
+        <div class="footer-bottom-right">
+            <a class="un" href="mentions-legales.html">Mentions légales</a> |
+            <a class="un" href="politique-de-confidentialite.html">Politique de confidentialité</a>
+        </div>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>

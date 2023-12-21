@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     background-color: white;
     color: black;
     
@@ -22,26 +22,37 @@ body, html {
     align-items: center; /* Centrer verticalement */
     width: 100vw;
     height: 100vh;
-    background-image: url('images/background3.png');
+    background-image: url('images/background2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+.texte_un{
+    font-family: "brush-script-std", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: calc(6vw + 1vh); /* Taille de police dynamique */
+color: #665342;
+}
+.texte_deux{
+    color: #665342;
+font-weight: 400;
+font-style: normal;
+font-size: calc(1.9vw + 1vh); /* Taille de police dynamique */
+margin-top: 5%;
+
+}
+    
 .centered-text {
     color: black; /* Ou toute autre couleur qui se détache bien sur votre image de fond */
-    font-size: calc(2vw + 1vh); /* Taille de police dynamique */
     text-align: center;
-
-    
+    left: 0;
+    right: 0;
+    width: 100%; /* Assurez-vous que le texte s'étend sur toute la largeur */
 }
+;
 
-width: 100%; /* Assurez-vous que le texte s'étend sur toute la largeur */
-position: absolute; /* Utilisez position absolute plutôt que fixed */
-top: 20vh; /* Ajustez cette valeur pour positionner le texte au-dessus du formulaire */
-left: 0;
-right: 0;
-margin: 0 auto;
-font-size: calc(1vw + 1vh);
+
 
 
 /*Centrage texte*/

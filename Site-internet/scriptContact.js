@@ -20,3 +20,6 @@ backdrop.addEventListener('click', () => {
     body.classList.remove('no-scroll'); // Réactive le défilement
   }, 300); // Vous pouvez ajuster ce timing selon l'animation
 });
+
+
+
