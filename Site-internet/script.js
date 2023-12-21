@@ -131,4 +131,23 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const menuIcon = document.querySelector('#accueil');
+  const nav = document.querySelector('nav');
+  const serviceLink = document.querySelector('nav ul li a[href="#accueil"]'); // Sélectionne le lien "Services"
+
+  // Bascule la classe pour la transformation du menu burger et l'ouverture/fermeture du menu
+  menuIcon.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    menuIcon.classList.toggle('cross');
+  });
+
+  // Fermer le menu lorsque vous cliquez sur le lien "Services"
+  if (serviceLink) {
+    serviceLink.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuIcon.classList.remove('cross');
+    });
+  }
+});
 

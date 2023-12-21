@@ -215,20 +215,29 @@ margin-top: 5%;
 
 
 
-.quisommesnous2{
-    margin: 100px;
+  .quisommesnous2 {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    gap: 20px; /* Espacement entre les éléments */
+    margin-top: 50px; /* Centrage vertical et marge horizontale automatique */
+    margin-bottom: 100px;
 }
 
   .card2 {
-    width: 190px;
-    height: 254px;
+    width: 300px;
+    height: 400px;
     transition: all 0.2s;
     position: relative;
     cursor: pointer;
-  }
-  img{
-  width: 100%;
-  height: 100%;
+    margin: 0; /* Annuler toute marge par défaut si nécessaire */
+    margin-left: 50px;
+}
+
+  img {
+    width: 100%;
+    height: auto; /* Gardez le ratio d'aspect des images */
   }
   
   .card2-inner {
@@ -240,14 +249,14 @@ margin-top: 5%;
     border-radius: 8px;
   }
   
-  .card:hover {
-    transform: scale(1.04) rotate(1deg);
-  }
-  
+.card2:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
   .circle {
     width: 100px;
     height: 100px;
-    background: radial-gradient(#b0e633, #53ef7d);
+    background: radial-gradient(#ffac58, #fca34c);
     border-radius: 50%;
     position: absolute;
     animation: move-up6 2s ease-in infinite alternate-reverse;
