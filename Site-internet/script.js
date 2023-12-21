@@ -151,3 +151,30 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  let currentTestimonial = 0;
+  const testimonials = document.querySelectorAll('.testimonial');
+
+  function showTestimonial(index) {
+    testimonials.forEach((testimonial, idx) => {
+      testimonial.style.display = idx === index ? 'block' : 'none';
+      testimonial.classList.toggle('active', idx === index);
+    });
+  }
+
+  prevButton.addEventListener('click', () => {
+    currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(currentTestimonial);
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+    showTestimonial(currentTestimonial);
+  });
+
+  // Initialise le premier avis comme actif
+  showTestimonial(currentTestimonial);
+});

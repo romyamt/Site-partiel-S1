@@ -284,3 +284,104 @@ margin-top: 5%;
       transform: translateY(10px);
     }
   }
+
+
+
+
+
+
+
+
+
+
+  .testimonial-slider {
+
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer horizontalement le carousel */
+    max-width: 800px; /* Ajustez la largeur maximale selon vos besoins */
+    margin: auto;
+    padding: 20px 50px 50px 50px; /* Ajustez l'espacement vertical */
+  }
+  
+  
+  .testimonial-nav {
+    background: none;
+    border: none;
+    font-size: 50px; /* Taille des flèches */
+    color: #ff9234; /* Couleur des flèches */
+    cursor: pointer;
+  }
+  
+  .testimonial-container {
+    background-color: #ffffff19; /* Couleur de fond gris clair */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre les éléments verticalement dans le conteneur */
+    justify-content: center; /* Centre les éléments horizontalement dans le conteneur */
+    width: 80%; /* Prend 80% de la largeur du parent */
+    max-width: 800px; /* Largeur maximale du conteneur */
+
+  }
+  
+  .testimonial {
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre les éléments verticalement */
+    text-align: center; /* Centre le texte */
+    width: 100%; /* Prend toute la largeur du conteneur parent */
+  }
+  
+  .testimonial-image {
+    width: 100px; /* Taille de l'image */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0; /* Empêche l'image de rétrécir */
+  }
+  
+  .testimonial-content {
+    flex: 1; /* Permet au contenu textuel de remplir l'espace restant */
+    padding: 0 20px; /* Ajoute un peu d'espace entre l'image et le texte */
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .testimonial-entreprise {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    color: #333;
+  }
+  
+  /* Pour les petits écrans */
+  @media (max-width: 768px) {
+    .testimonial-container {
+      flex-direction: column;
+    }
+    
+    .testimonial {
+      flex-direction: column;
+      text-align: center; /* Centre le texte pour les petits écrans */
+    }
+  
+    .testimonial-content {
+      padding: 0; /* Retire le padding pour les petits écrans */
+    }
+  }
+  
+  .testimonial-name,
+.testimonial-entreprise,
+.testimonial-text {
+  text-align: center; /* Centre le texte horizontalement */
+}
