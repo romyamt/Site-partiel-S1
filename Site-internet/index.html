@@ -30,7 +30,7 @@
     <nav>
         <div class="backdrop"></div>
         <ul>
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#accueil">Accueil</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#realisations">Réalisations</a></li>
             <li><a href="#quisommesnous">Qui sommes-nous</a></li>
@@ -40,7 +40,7 @@
     <main>
         <section class="background">
             
-            <div class="background_filtre "></div>
+            <div id="accueil" class="background_filtre "></div>
             
     </div>
     </section>
@@ -116,8 +116,59 @@
           
          
           <div class="conteneur-titre">
-            <h1 class="titreServices">Portfolio</h1>
+            <h1 id="realisations" class="titreServices">Portfolio</h1>
           </div>
+
+          <div class="portfolio-container">
+            <div class="image-flipper">
+                <img src="images/volupty.png" alt="Image de face" class="portfolio front">
+                <img src="images/voluptylogo.png" alt="Image de dos" class="portfolio back">
+              </div>
+              <div class="image-flipper">
+                <img src="images/sarah.png" alt="Image de face" class="portfolio front">
+                <img src="images/sarahlogo.png" alt="Image de dos" class="portfolio back">
+              </div>
+              <div class="image-flipper">
+                <img src="images/patagonia.png" alt="Image de face" class="portfolio front">
+                <img src="images/patagonialogo.png" alt="Image de dos" class="portfolio back">
+              </div>
+
+
+            <!-- Répétez les <img> autant que nécessaire pour remplir la largeur de la page -->
+        </div>
+
+
+
+
+
+
+
+
+
+          <div class="conteneur-titre">
+            <h1 id="quisommesnous" class="titreServices">Qui sommes-nous</h1>
+          </div>
+          <section class="quisommesnous2">
+          <div class="card2">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="card2-inner"> <img src="images/romane.png"></img></div>
+        </div>
+
+        <div class="card2">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="card2-inner"> <img src="images/alexis.png"></img></div>
+        </div>
+
+        <div class="card2">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="card2-inner"> <img src="images/quentin.png"></img></div>
+        </div>
+    </section>
+
+
 
 
 
@@ -153,10 +204,10 @@
         </div>
         <div class="footer-links">
             <div class="footer-section footer-links">
-                <a href="index.html">Accueil</a>
-                <a href="services.html">Services</a>
-                <a href="realisations.html">Réalisations</a>
-                <a href="quisommesnous.html">Qui sommes-nous</a>
+                <a href="index.html#accueil">Accueil</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#realisations">Réalisations</a>
+                <a href="index.html#quisommesnous">Qui sommes-nous</a>
                 <a href="contact.html">Contact</a>
             </div>
         </div>

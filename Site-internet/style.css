@@ -163,3 +163,124 @@ margin-top: 5%;
     height: 100%;
 }
 
+
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .image-flipper {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px; /* Donne de la profondeur pour l'effet 3D */
+  }
+  
+  .portfolio {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* Cache la face arrière de l'élément lorsqu'il est tourné */
+    transition: transform 0.6s; /* Animation fluide du retournement */
+  }
+  
+  .front {
+    transform: rotateY(0deg); /* Image de face */
+  }
+  
+  .back {
+    transform: rotateY(180deg); /* Image de dos, initialement cachée */
+  }
+  
+  .image-flipper:hover .front {
+    transform: rotateY(-180deg); /* Retourne l'image de face */
+  }
+  
+  .image-flipper:hover .back {
+    transform: rotateY(0deg); /* Affiche l'image de dos */
+  }
+
+
+
+  /*********************************/
+
+
+
+
+
+
+
+
+  .quisommesnous2 {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+    gap: 20px; /* Espacement entre les éléments */
+    margin-top: 50px; /* Centrage vertical et marge horizontale automatique */
+    margin-bottom: 100px;
+}
+
+  .card2 {
+    width: 300px;
+    height: 400px;
+    transition: all 0.2s;
+    position: relative;
+    cursor: pointer;
+    margin: 0; /* Annuler toute marge par défaut si nécessaire */
+    margin-left: 50px;
+}
+
+  img {
+    width: 100%;
+    height: auto; /* Gardez le ratio d'aspect des images */
+  }
+  
+  .card2-inner {
+    width: inherit;
+    height: inherit;
+    background: rgba(255,255,255,.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+  }
+  
+.card2:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#ffac58, #fca34c);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 2s ease-in infinite alternate-reverse;
+  }
+  
+  .circle:nth-child(1) {
+    top: -25px;
+    left: -25px;
+  }
+  
+  .circle:nth-child(2) {
+    bottom: -25px;
+    right: -25px;
+    animation-name: move-down1;
+  }
+  
+  @keyframes move-up6 {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(10px);
+    }
+  }
