@@ -84,3 +84,17 @@ form textarea {
     margin: 0 auto;
     font-size: calc(1vw + 1vh);
 }
+
+.btn {
+    cursor: pointer; /* Change le curseur en main pour indiquer la possibilité de cliquer */
+    padding: 0.8em; /* Espacement interne plus grand pour une apparence plus grande */
+    background-color: #ff9234; /* Couleur d'accent pour le bouton */
+    color: white; /* Texte blanc pour le contraste */
+    border: none; /* Pas de bordure pour un bouton plein */
+    border-radius: 4px; /* Arrondit les bords du bouton */
+    transition: background-color 0.3s; /* Animation de transition pour l'interaction */
+}
+
+.btn:hover{
+    background-color: #e67e22; /* Assombrir le bouton lors du survol pour l'interaction */
+}
