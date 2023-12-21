@@ -35,9 +35,9 @@
     </nav>
     <main>
 
-        <div class="texteContact"><strong>Une demande, un projet, ou une question ? </strong><br><br>
+        <div class="texteContact"><strong>Devis pour votre  </strong><br><br>
 
-           <I>Retrouvez nous 1 rue marie curie 56890 Plescop ou prennons contact grâce à ce formulaire. </I></div>
+           <I>Donnez-nous toutes les informations sur votre projet pour un futur rendez-vous </I></div>
 
         <form action="https://formspree.io/f/xyyrgjkg" method="POST" enctype="multipart/form-data">
             <!-- Champ pour l'email -->
@@ -58,13 +58,26 @@
               <input type="text" name="subject" required>
             </label>
           
+            <label>
+                Budget alloué :
+                <input type="text" name="subject" required>
+              </label>
+
+              <label>
+                Deadline :
+                <input type="text" name="subject" required>
+              </label>
             <!-- Espace pour entrer du texte -->
             <label>
               Votre message :
               <textarea name="message" rows="4" required></textarea>
             </label>
           
-
+            <!-- Champ pour ajouter un fichier -->
+            <label>
+              Votre fichier (logos ou autres):
+              <input type="file" name="upload">
+            </label>
           
             <!-- Bouton de soumission -->
             <button type="submit">Envoyer</button>
